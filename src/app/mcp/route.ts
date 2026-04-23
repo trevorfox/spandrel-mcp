@@ -90,7 +90,7 @@ async function handle(req: NextRequest): Promise<Response> {
     return transport.handleRequest(req);
   } catch (err) {
     const msg = err instanceof Error ? err.stack ?? err.message : String(err);
-    console.error("[/api/mcp] handler error:", msg);
+    console.error("[/mcp] handler error:", msg);
     return new Response(JSON.stringify({ error: "Internal error", detail: msg }), {
       status: 500,
       headers: { "Content-Type": "application/json" },

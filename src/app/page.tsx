@@ -11,7 +11,7 @@ export default function Home() {
       </p>
 
       <h2>Endpoint <span className="badge">POST</span></h2>
-      <pre><code>https://mcp.spandrel.org/api/mcp</code></pre>
+      <pre><code>https://mcp.spandrel.org/mcp</code></pre>
       <p>
         Streamable HTTP transport. Reads the published bundle at{" "}
         <a href={BUNDLE_URL}>{BUNDLE_URL}</a> via{" "}
@@ -29,7 +29,7 @@ export default function Home() {
       </p>
 
       <h2>Wire it up</h2>
-      <pre><code>{`claude mcp add spandrel https://mcp.spandrel.org/api/mcp \\
+      <pre><code>{`claude mcp add spandrel https://mcp.spandrel.org/mcp \\
   --transport http --scope user`}</code></pre>
 
       <hr />
